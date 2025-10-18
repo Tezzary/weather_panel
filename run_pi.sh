@@ -10,9 +10,9 @@ cd ~/weather_panel
 
 git pull
 
-nohup ./run.sh &
+nohup ./run.sh > /dev/null 2>&1 &
 
 killall firefox
 export DISPLAY=:0
-nohup firefox --kiosk --new-instance --private-window http://localhost:8001/ &
+nohup firefox --kiosk --new-instance --private-window http://localhost:8001/ --start-debugger-server 6000 > /dev/null 2>&1 &
 "
