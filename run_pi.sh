@@ -7,7 +7,9 @@ if [ ! -d weather_panel ]; then
 fi
 
 cd ~/weather_panel
-killall firefox
-./run.sh
+nohup ./run.sh &
 
+killall firefox
+export DISPLAY=:0
+nohup firefox --kiosk --new-instance --private-window http://localhost:8001/ &
 "
