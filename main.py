@@ -49,14 +49,14 @@ def updateImageDatabase(time, amountOfTimes):
 
         response = requests.get(f"http://www.bom.gov.au/radar/IDR023.T.{formattedTime}.png", headers = {'User-agent': 'Mozilla/5.0'})
 
-        file = open(f"images/{i}.png", "wb")
+        file = open(f"static/images/{i}.png", "wb")
         file.write(response.content)
         file.close()
         
-        rainfallImg = Image.open(f"images/{i}.png").convert("RGBA")
+        rainfallImg = Image.open(f"static/images/{i}.png").convert("RGBA")
         temp = Image.alpha_composite(background, rainfallImg)
         finalImg = Image.alpha_composite(temp, foreground).convert("P")
-        finalImg.save(f"images/{i}.png")
+        finalImg.save(f"static/images/{i}.png")
 
 
 def update_images_every(seconds):
