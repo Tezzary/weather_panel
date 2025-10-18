@@ -7,6 +7,9 @@ if [ ! -d weather_panel ]; then
 fi
 
 cd ~/weather_panel
+
+git pull
+
 nohup ./run.sh &
 
 killall firefox
