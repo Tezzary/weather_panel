@@ -10,7 +10,7 @@ while True:
     try:
         response = requests.get(url, headers = {'User-agent': 'Mozilla/5.0'})
 
-        with open("dump.json", "w") as f:
+        with open("static/weatherInformation.json", "w") as f:
             json.dump(response.json(), f, indent=2)
 
     except Exception as e:

@@ -18,3 +18,19 @@ function loadNextImage() {
 }
 
 setInterval(loadNextImage, timeBetweenImages)
+
+let tempDOM = document.getElementById("temp")
+let feelsLikeDOM = document.getElementById("feelsLike")
+
+async function updateWeatherInformation() {
+  let weatherInformationResponse = await fetch("weatherInformation.json")
+  let weatherInformation = await weatherInformationResponse.json()
+  let temp = weatherInformation.obs.temp.dry_bulb_1min_cel;
+  let feelsLike = weatherInformation.obs.temp.apparent_1min_cel;
+  console.log(weatherInformation)
+  tempDOM.innerHTML = temp + "&deg;"
+  feelsLikeDOM.innerHTML = "Feels Like " + feelsLike + "&deg;"
+}
+
+updateWeatherInformation()
+setInterval(updateWeatherInformation, maxCacheTime * 1000)
