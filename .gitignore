@@ -2,3 +2,4 @@ venv
 static/images/*
 !static/images/.gitkeep
 log.txt
+*.json
