@@ -16,30 +16,30 @@
     }
   },
   "obs": {
-    "datetime_utc": "2025-10-23T07:30:00Z",
+    "datetime_utc": "2025-10-23T07:50:00Z",
     "temp": {
-      "dry_bulb_1min_cel": 15.8,
-      "apparent_1min_cel": 13.56,
-      "dew_pnt_1min_cel": 6.52,
-      "wet_bulb_1min_avg_cel": 11.27,
-      "wet_bulb_globe_sun_cel": 16.7,
-      "wet_bulb_globe_shade_cel": 12.63,
-      "wet_bulb_depression_cel": 4.53,
+      "dry_bulb_1min_cel": 15.5,
+      "apparent_1min_cel": 13.14,
+      "dew_pnt_1min_cel": 5.97,
+      "wet_bulb_1min_avg_cel": 10.91,
+      "wet_bulb_globe_sun_cel": 16.4,
+      "wet_bulb_globe_shade_cel": 12.29,
+      "wet_bulb_depression_cel": 4.59,
       "dry_bulb_max_cel": 17.5,
       "dry_bulb_max_time_utc": "2025-10-23T04:31:00Z",
-      "dry_bulb_min_cel": 15.7,
-      "dry_bulb_min_time_utc": "2025-10-23T07:27:00Z",
-      "rel_hum_percent": 54.0
+      "dry_bulb_min_cel": 15.4,
+      "dry_bulb_min_time_utc": "2025-10-23T07:50:00Z",
+      "rel_hum_percent": 53.0
     },
     "pres": {
       "stn_lvl_hpa": null,
-      "msl_hpa": 1014.5,
-      "qnh_hpa": 1014.5
+      "msl_hpa": 1014.8,
+      "qnh_hpa": 1014.8
     },
     "wind": {
-      "speed_10m_mps": 2.572,
+      "speed_10m_mps": 1.8,
       "dirn_10m_ord": "SSW",
-      "gust_speed_10m_mps": 4.116,
+      "gust_speed_10m_mps": 3.601,
       "gust_dirn_10m_deg_t": 262.0,
       "gust_speed_10m_max_mps": 7.202,
       "gust_10m_max_utc": "2025-10-22T14:00:00Z",
@@ -54,7 +54,7 @@
       "24h_total_mm": null
     },
     "visibility": {
-      "horiz_m": 50232.0
+      "horiz_m": 47831.0
     },
     "cloud": {
       "base_ht_s1_m": null,

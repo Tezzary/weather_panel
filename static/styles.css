@@ -1,9 +1,28 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #0D1B2A;  /* rich navy */
+  color: #E0E1DD;            /* soft white */
 }
 
 img {
   width: 480px;
   height: 480px;
+}
+
+.container {
+  display: flex;
+}
+
+.weatherInformation {
+  text-align: center;
+  flex: 1;
+}
+h1 {
+  font-size: 6em;
+  margin-bottom: 0;
+}
+h3 {
+  margin-top: 0;
 }
